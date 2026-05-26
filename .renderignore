@@ -1,0 +1,8 @@
+# Ignore files during Render build
+node_modules/
+.git/
+.env
+*.log
+.DS_Store
+dist/
+coverage/
