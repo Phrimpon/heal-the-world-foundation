@@ -38,12 +38,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__,
             template_folder=os.path.join(os.path.dirname(__file__), '..', 'templates'),
             static_folder=os.path.join(os.path.dirname(__file__), '..', 'static'))
-@app.route("/")
-def home():
-    return {
-        "status": "running",
-        "message": "Heal The World Foundation API is live"
-    }
+
 
 # Set secure config parameters
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'super_secure_fallback_key_2026_heal_the_world')
